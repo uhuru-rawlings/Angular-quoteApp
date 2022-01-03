@@ -1,0 +1,29 @@
+<div class="container" id="formcontainer">
+    <h3>Quotes Form</h3>
+    <form class="form-group" id="formgroup" #forms="ngForm" (ngSubmit)="getValues(forms)">
+     <div class="flex_forms">
+         <label for="author"> Author:
+             <br>
+
+             <span class="text-danger" *ngIf="firstInput.invalid && firstInput.touched">please fill this field</span>
+             <input type="text" [(ngModel)]="authorName"  #firstInput="ngModel" required name="author" class="author" placeholder="Type Author" class="form-control">
+         </label>
+         <label for="postby"> Posted By:
+             <br>
+
+             <span class="text-danger" *ngIf="secondInput.invalid && secondInput.touched">please fill this field</span>
+            <input type="text" [(ngModel)]="postBy" #secondInput="ngModel" name="postby" id="postby" required class="author" placeholder="Posted By" class="form-control">
+        </label>
+     </div>
+        <div class="form-group">
+            <label for="addquotes" class="form-group"> Quotes</label>
+                <br>
+                <span class="text-danger" *ngIf="lastInput.invalid  && lastInput.touched">please fill this field</span>
+                <textarea name="addquotes" [(ngModel)]="addedQuote"   #lastInput="ngModel" id="addquotes" required cols="30" rows="10" placeholder="Type Quotes here" class="form-control"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="Add Quote" id="submitbtn"class="btn btn-primary text-light">
+    </form>
+</div>
+
+<app-quotes [postdata] = "allData"></app-quotes>

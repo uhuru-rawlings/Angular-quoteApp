@@ -1,0 +1,31 @@
+#addquotes{
+    height: 80px;
+    resize: none;
+    width: 100%;
+}
+#formgroup{
+    margin: 0% 25%;
+}
+h3{
+    text-align: center;
+}
+label{
+    color: rgb(0, 151, 81);
+}
+#submitbtn{
+    width:100%;
+    font-weight: 700;
+}
+.flex_span{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+#quote_card{
+    width: fit-content;
+    padding: 10px;
+}
+.text-danger{
+    font-size: 13px;
+    font-weight: 400;
+}

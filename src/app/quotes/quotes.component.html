@@ -1,0 +1,33 @@
+<div class="container" >
+    <div class="title text-center">Added Quotes</div>
+    <hr>
+    <div class="key card">
+        <h6>Key</h6>
+        <hr>
+        <div class="flex-key">
+            <div class="block" [style.background-color]="bgdefault"></div>
+            <div class="text">Highly Rated(4 stars or 5 stars)</div>
+        </div>
+        <div class="flex-key">
+            <div class="block"><i class="fa fa-star-o" [style.color]="default" aria-hidden="true"></i></div>
+            <div class="text">Rated</div>
+        </div>
+    </div>
+    <div class="flex_quotes">
+        <div class="quote card" *ngFor="let postdatas of postdata; let i = index;" [style.color]="bestratingsc">
+            <div class="text">{{postdatas.quote}}</div>
+            <div class="flex-text">
+                <span >Author: {{postdatas.author}} </span><span >Posted by: {{postdatas.postb}} </span>
+            </div>
+            <div class="posttime"> {{ date | date: 'short'}}</div>
+            <div class="mainflex">
+                <div class="controls">
+                    <!-- <button class="btn btn-secondary" (click)="deleteItem(i)">Delete</button> -->
+                    <div class="delete"><i class="fa fa-trash" (click)="deleteItem(i)" aria-hidden="true"></i></div>
+                </div>
+                <app-details (bestrating)="bestratingsc"></app-details>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut amet autem, error culpa ipsum laboriosam. -->
