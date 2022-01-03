@@ -8,3 +8,4 @@ Uhuru Otieno Rawlings
 1. Angular CLI
 2. Node js
 3. Typescript
+##### Set up procedure
