@@ -4,3 +4,4 @@ This is an angular app that allows user to upload quotes, rate them a 5 star for
 #### Author
 Uhuru Otieno Rawlings
 #### SetUp
+##### Requirements
