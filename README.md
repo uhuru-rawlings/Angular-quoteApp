@@ -9,3 +9,4 @@ Uhuru Otieno Rawlings
 2. Node js
 3. Typescript
 ##### Set up procedure
+install Angular cli npm install -g @angular/cli@11.2.6
