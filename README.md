@@ -12,3 +12,4 @@ Uhuru Otieno Rawlings
 install Angular cli npm install -g @angular/cli@11.2.6
 install node can be downloaded from node.org
 install typescript npm install -g typescript
+###### Adding angular project
