@@ -14,3 +14,5 @@ install node can be downloaded from node.org
 install typescript npm install -g typescript
 ###### Adding angular project
 ng new project_name
+###### Adding components
+ng g c componentname
