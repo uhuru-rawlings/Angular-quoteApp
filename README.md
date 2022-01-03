@@ -10,3 +10,5 @@ Uhuru Otieno Rawlings
 3. Typescript
 ##### Set up procedure
 install Angular cli npm install -g @angular/cli@11.2.6
+install node can be downloaded from node.org
+install typescript 
